@@ -30,6 +30,9 @@ dotenv.config();
       entities: [Grabacion, NavegacionSlide, FragmentoAudio],
       autoLoadEntities: true,
       synchronize: true,
+      extra: {
+          family: 4, //  esto fuerza a que use IPv4 (Render lo necesita)
+      },
     }),
     GrabacionModule,
     NavegacionSlideModule,
